@@ -20,7 +20,7 @@ public class UserService {
 		userMap.put(5, "pratap");
 		
 		if (!userMap.containsKey(id))
-			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "key not found");
+			throw new ResponseStatusException(HttpStatus.NOT_FOUND, "key not found / pipeline implemented");
 		else
 		   return userMap.get(id);
 	}
